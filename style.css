@@ -705,14 +705,9 @@ body {
 }
 
 #homepage-content .taivengay-last {
-  margin: auto;
-  margin-top: 150px;
-  width: 1080px;
-  background-color: rgba(233,244,199, 0.67);
-  height: 900px;
-  border-radius: 50px;
-  border: 5px solid #5CCB2A;
-  position: relative;
+  background-image: url("Assets/Picture/zone4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #homepage-content .taivengay-video img.phacake {
@@ -1145,11 +1140,14 @@ body {
 }
 
 #contact {
-  padding-left: 150px;
-  padding-right: 150px;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  background-size: cover;
+  height: 1000px;
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+#contact .h5-big {
+  transform: translateX(100px);
 }
 
 #contact h5 {
@@ -1157,11 +1155,13 @@ body {
   font-family: Montserrat-Black;
   text-transform: uppercase;
   margin-bottom: 5px;
-  color: #004403;
+  color: #7C441E;
 }
 
 
 #contact .contact-content {
+  margin-left: 200px;
+  margin-top: 25px;
   display: flex;
   justify-content: space-around;
 }
@@ -1171,16 +1171,36 @@ body {
 }
 
 #contact .form p.enter-information {
-  color: #004403;
+  color: #7C441E;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   margin-left: 20px;
-  margin-top: 25px;
   margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+#contact .form-mota {
+  margin-left: 200px;
+  position: relative;
+}
+
+#contact .form-mota .btn-send{
+  margin-top: 50px;
+  width: 110px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  color: #DDAC4C;
+  background-color: #7C441E;
+  text-transform: uppercase;
+  border-radius: 20px;
+  position: absolute;
+  right: 20px;
 }
 
 #contact .form p.not-empty {
-  color: #004403;
+  color: #7C441E;
   font-size: 12px;
   margin-left: 20px;
   margin-top: 5px;
@@ -1192,22 +1212,35 @@ body {
   width: 100%;
   height: 56px;
   border-radius: 20px;
-  border: 2px solid #004403;
-  color: #004403;
+  border: 2px solid #7C441E;
+  color: #7C441E;
   padding-left: 20px;
   background-color: rgba(0,0,0,0);
+  width: 500px;
+  height: 43px;
+  outline: none;
 }
 
+#contact .form input::placeholder,
+#contact .form .decs textarea::placeholder{
+  color: #7C441E;
+  font-style: italic;
+  font-family: Montserrat;
+  font-size: 12px;
+} 
+
 #contact .form .decs textarea {
-  width: 100%;
-  height: 200px;
+  width: 500px;
+  height: 71px;
   border-radius: 20px;
-  border: 2px solid #004403;
-  color: #004403;
+  border: 2px solid #7C441E;
+  color: #7C441E;
   padding-left: 20px;
+  padding-right: 6px;
   padding-top: 20px;
   font-size: 15px;  
   background-color: rgba(0,0,0,0);
+  outline: none;
 
 }
 
@@ -1215,18 +1248,17 @@ body {
   position: relative;
 }
 
-#contact .btn-gui {
-  width: 320px;
-  position: absolute;
-  bottom: -70px;
-  left: 50%;
-  transform: translateX(-50%)
-}
-
 #contact .contact-content .right {
   flex: 3;
 }
 
+#hotro {
+  position: relative;
+}
+
+#hotro .poscard{
+  position: absolute;
+}
 
 
 #kienflex .kienflex-firstpart {
