@@ -25,7 +25,7 @@
 }
 
 body {
-  font-family: Roboto;
+  font-family: Montserrat;
 }
 
 .text-white {
@@ -1140,7 +1140,7 @@ body {
 }
 
 #contact {
-  height: 1000px;
+  height: 703px;
   width: 720px;
   margin: 0 auto;
   padding-top: 70px;
@@ -3069,22 +3069,51 @@ body {
 }
 
 #footer .mainbg {
-
-  background-color: #000;
-  height: 288px;
   position: relative;
 }
 
-#footer .mainbg .social-logo {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+#footer .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute; 
+  bottom: 114px;
+  right: 250px;
 }
 
-#footer  .logo {
-  width: 20%;
-  margin: auto;
-} 
+#footer .input input{
+  width: 380px;
+  height: 50px;
+  border: 3px solid #7C441E;
+  background-color: #DDAC4C;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 20px;
+  color: #7C441E;
+  font-size: 14px;
+}
+
+#footer .input input::placeholder {
+  font-style: italic;
+  font-size: 14px;
+  color: #7C441E;
+}
+
+#footer .input .button {
+  color: #DDAC4C;
+  width: 115px;
+  padding: 7px 0;
+  text-transform: uppercase;
+  background-color: #7C441E;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: bold;
+}
 
 .taive-popup {
   position: fixed;
@@ -3093,8 +3122,8 @@ body {
   transform: translateY(-50%);
   width: 152px;
   height: 300px;
-  border: 5px solid #5CCB2A;
-  background-color: #E9F4C7;
+  border: 5px solid #7C441E;
+  background-color: #DDAC4C;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3108,7 +3137,7 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
-  color: #004403;
+  color: #7C441E;
 }
 
 .taive-popup .qrcode {
@@ -3122,6 +3151,12 @@ body {
 .taive-popup a:hover {
   transform: scale(1.1);
   transition: .5s;
+}
+
+.taive-popup .vedautrang {
+  position: absolute;
+  bottom: -45px;
+  z-index: -1;
 }
 
 #tt-sk-cd {
