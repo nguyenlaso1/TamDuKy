@@ -3162,7 +3162,7 @@ body {
 #tt-sk-cd {
   background-image: url("Assets/Picture/zone3.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 700px;
 }
 
