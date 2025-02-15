@@ -708,7 +708,7 @@ body {
 #homepage-content .taivengay-last {
   background-image: url("Assets/Picture/zone4.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 #homepage-content .taivengay-video img.phacake {
@@ -3116,6 +3116,12 @@ body {
   font-weight: bold;
 }
 
+@media (max-width: 1400px) {
+  #footer .input input{
+    width: 290px;
+  }
+}
+
 .taive-popup {
   position: fixed;
   right: 0;
@@ -3337,6 +3343,35 @@ body {
     height: 30px;
   }
 }
+
+.guithanhcong {
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+  display: none;
+}
+
+.guithanhcong.active {
+  display: block;
+}
+
+.popup {
+  position: relative;
+}
+
+.popup .button {
+  position: absolute;
+  right: -10px;
+  top: -25px;
+}
+
+.body {
+  position: relative;
+}
+
+
 
 
 

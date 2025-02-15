@@ -36,3 +36,14 @@ function momodal4(){
         query.classList.remove("active");
     else query.classList.add("active");
 }
+
+function momodal5(){
+    var query = document.querySelector(".guithanhcong");
+    query.classList.add("active");
+}
+
+function momodal6(){
+    var query = document.querySelector(".guithanhcong");
+    if (query.classList.contains("active"))
+        query.classList.remove("active");
+}
